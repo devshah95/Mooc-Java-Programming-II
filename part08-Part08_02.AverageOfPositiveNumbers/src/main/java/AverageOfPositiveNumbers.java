@@ -13,7 +13,7 @@ public class AverageOfPositiveNumbers {
             if (input == 0) {
                 break;
             }
-            if (input >= 0) {
+            if (input > 0) {
                 nums.add(input);
             }
         }
