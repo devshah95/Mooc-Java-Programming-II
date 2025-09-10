@@ -2,22 +2,22 @@ import java.util.HashMap;
 import java.util.ArrayList;
 
 public class DictionaryOfManyTranslations {
-    private HashMap<String, ArrayList<String>> wordMap;
+    private HashMap<String, ArrayList<String>> dictionary;
 
     public DictionaryOfManyTranslations() {
-        this.wordMap = new HashMap<>();
+        this.dictionary = new HashMap<>();
     }
 
     public void add(String word, String translation) {
-        this.wordMap.putIfAbsent(word, new ArrayList<>());
-        this.wordMap.get(word).add(translation);
+        this.dictionary.putIfAbsent(word, new ArrayList<>());
+        this.dictionary.get(word).add(translation);
     }
 
     public ArrayList<String> translate(String word) {
-        return this.wordMap.getOrDefault(word, new ArrayList<>());
+        return this.dictionary.getOrDefault(word, new ArrayList<>());
     }
 
     public void remove(String word) {
-        this.wordMap.remove(word);
+        this.dictionary.remove(word);
     }
 }
