@@ -2,6 +2,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        // Test your code here!
+        TripleTacoBox box1 = new TripleTacoBox();
+        CustomTacoBox box2 = new CustomTacoBox(66);
     }
 }
