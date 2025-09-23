@@ -23,8 +23,8 @@ public class Suitcase {
         int summa = 0;
         int indeksi = 0;
         while (indeksi < this.Items.size()) {
-        summa += this.Items.get(indeksi).getweight();
-        indeksi++;
+            summa += this.Items.get(indeksi).getweight();
+            indeksi++;
         }
         return summa;
     }
@@ -32,9 +32,9 @@ public class Suitcase {
     public void printItems() {
         int indeksi = 0;
         while (indeksi < this.Items.size()) {
-        Item t = this.Items.get(indeksi);
-        System.out.println(t);
-        indeksi++;
+            Item t = this.Items.get(indeksi);
+            System.out.println(t);
+            indeksi++;
         }
     }
 

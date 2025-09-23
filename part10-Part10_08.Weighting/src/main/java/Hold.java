@@ -1,5 +1,4 @@
 
-
 import java.util.ArrayList;
 
 public class Hold {
@@ -24,8 +23,8 @@ public class Hold {
         int summa = 0;
         int indeksi = 0;
         while (indeksi < this.suitcases.size()) {
-        summa += this.suitcases.get(indeksi).totalWeight();
-        indeksi++;
+            summa += this.suitcases.get(indeksi).totalWeight();
+            indeksi++;
         }
         return summa;
     }
@@ -33,8 +32,8 @@ public class Hold {
     public void printItems() {
         int indeksi = 0;
         while (indeksi < this.suitcases.size()) {
-        this.suitcases.get(indeksi).printItems();
-        indeksi++;
+            this.suitcases.get(indeksi).printItems();
+            indeksi++;
         }
     }
 
