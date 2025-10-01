@@ -5,7 +5,8 @@ public class MagicSquareFactory {
 
         MagicSquare square = new MagicSquare(size);
 
-        // implement the creation of a magic square with the Siamese method algorithm here
+        // implement the creation of a magic square with the Siamese method algorithm
+        // here
         return square;
     }
 
